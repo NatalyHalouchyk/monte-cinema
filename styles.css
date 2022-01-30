@@ -59,10 +59,21 @@ button {
   background-color: #EC1115;
   color: #FFF;
 }
+.btn-red:hover{
+  background-color: #A60C0E;
+}
 
 .btn-white {
   background-color: #FFF;
   color: #EC1115;
+}
+
+.btn-white:hover{
+  background-color:	#FEF6F6;
+}
+
+.pressed{
+  outline: 5px solid #F47073;
 }
 
 /* Navbar */
@@ -73,11 +84,13 @@ nav {
 nav button {
   border-radius: 20px;
   height: 44px;
+  width: 132px;
   padding: 12px 24px;
 }
 
 nav .btn-white {
   margin-left: auto;
+  margin-right: 10px;
 }
 
 /* Head section */
@@ -101,7 +114,7 @@ nav .btn-white {
 
 .header-text button {
   height: 60px;
-  width: 50%;
+  width: 288px;
   font-size: 22px;
 }
 
@@ -121,7 +134,7 @@ nav .btn-white {
   margin-right: 28px;
   padding: 2%;
   border-radius: 8px;
-  box-shadow: 0px 24px 72px #E5E5E5, 0px 6px 18px #E5E5E5, 0px 1.8px 5.4px #E5E5E5;
+  box-shadow: 0 24px 72px #E5E5E5, 0 6px 18px #E5E5E5, 0 1.8px 5.4px #E5E5E5;
 }
 
 .movie-card:last-child {
@@ -149,7 +162,7 @@ nav .btn-white {
   margin: 48px auto 0 auto;
   padding: 5%;
   border-radius: 24px;
-  box-shadow: 0px 4px 22px #E5E5E5;
+  box-shadow: 0 4px 22px #E5E5E5;
 }
 
 .booking-card p{
@@ -166,11 +179,23 @@ input {
   display: block;
   height: 54px;
   width: 100%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 8px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   margin: 8px 0;
   padding: 16px 24px;
+}
+
+input:hover{
+  background-color: #E5E5E5;
+}
+
+input:focus{
+  background-color: hsla(214, 84%, 56%, 0.1);
+  outline: 1px solid #2F80ED;
 }
 
 .booking-card button {
