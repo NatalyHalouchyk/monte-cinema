@@ -5,28 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte Cinema</title>
 
+<!-- CSS stylesheet -->
 <link rel="stylesheet" href="styles.css">
 
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-Register
-Login
-Welcome to the best cinema in Monterail
-Best movies, best experiences, best people. And all that doesn't exist. Yikes.
-Book a ticket
-SOON IN THE CINEMA
-SEE ALL
-Predator
-A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.
-Commando
-A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.
-Terminator 2
-A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.
-Online booking
-Soon
-Leave us your email address and we'll let you know as soon as the machine will start.
-Email
-Let me know!
+
+
+
+<section id="title">
+  <nav>
+      <img src="images/logo.svg" alt="montecinema-logo">
+      <button class="btn-white" type="button" name="button">Register</button>
+      <button class="btn-red" type="button" name="button">Login</button>
+  </nav>
+
+  <div class="wrapper header">
+    <div class="header-text">
+      <h1>Welcome to the best cinema in Monterail</h1>
+      <p>Best movies, best experiences, best people. And all that doesn't exist.<br>Yikes.</p>
+      <button class="btn-red" type="button" name="button">Book a ticket</button>
+    </div>
+    <div class="header-img">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="movies">
+
+<div class="wrapper">
+  <p class="label">Soon in the cinema</p>
+  <p class="label red-text">See all</p>
+</div>
+
+
+<div class="wrapper movie-collection">
+  <div class="movie-card">
+    <h2>Predator</h2>
+    <img class="movie-img" src="images/predator.png" alt="predator-shot">
+    <p>A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.</p>
+  </div>
+
+  <div class="movie-card">
+    <h2>Commando</h2>
+  <img class="movie-img" src="images/commando.png" alt="commando-shot">
+  <p>A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.</p>
+  </div>
+
+  <div class="movie-card">
+    <h2>Terminator 2</h2>
+    <img class="movie-img" src="images/terminator.png" alt="terminator-shot">
+  <p>A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.</p>
+  </div>
+</div>
+
+
+  </section>
+
+<section id="booking">
+  <h1>Online booking</h1>
+
+  <p>Soon</p>
+
+  <div class="booking-card">
+    <img src="images/logo.svg" alt="montecinema-logo">
+    <p>Leave us your email address and we'll let you know as soon as the machine will start.</p>
+    <label class="label red-text" for="">Email</label>
+    <input type="email" name="email" placeholder="e.g. mynameislaura@mail.com">
+    <button class="btn-red" type="submit">Let me know!</button>
+  </div>
+
+</section>
+
 
 <script src="index.js" charset="utf-8"></script>
   </body>
