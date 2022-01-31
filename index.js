@@ -5,6 +5,9 @@ const card = document.querySelector(".booking-card");
 const msg = document.querySelector(".success-message");
 const warning = document.querySelector(".warning");
 
+const humburger = document.querySelector(".humburger");
+const navBtn = document.querySelector(".nav-buttons");
+
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", () => {
     btn[i].classList.add("pressed");
@@ -31,6 +34,8 @@ form.addEventListener("submit", (e) => {
 
 });
 
+humburger.addEventListener("click", mobileMenu);
+
 function checkEmail() {
   const emailTest = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -38,4 +43,9 @@ function checkEmail() {
     return false;
   } else return true;
 
+}
+
+function mobileMenu() {
+  navBtn.classList.toggle("visible-flex");
+  document.querySelector(".header").classList.toggle("margins");
 }
