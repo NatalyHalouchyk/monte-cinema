@@ -28,16 +28,15 @@ p {
   margin: 16px 0;
 }
 
-.label{
+.label {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
-.red-text{
+.red-text {
   color: #EC1115;
 }
-
 
 /* Buttons' styles */
 button {
@@ -54,7 +53,8 @@ button {
   background-color: #EC1115;
   color: #FFF;
 }
-.btn-red:hover{
+
+.btn-red:hover {
   background-color: #A60C0E;
 }
 
@@ -63,11 +63,11 @@ button {
   color: #EC1115;
 }
 
-.btn-white:hover{
-  background-color:	#FEF6F6;
+.btn-white:hover {
+  background-color: #FEF6F6;
 }
 
-.pressed{
+.pressed {
   outline: 5px solid #F47073;
 }
 
@@ -88,7 +88,7 @@ nav .btn-white {
   margin-right: 10px;
 }
 
-/* Head section */
+/* Title section */
 .header {
   display: flex;
   justify-content: space-between;
@@ -122,14 +122,28 @@ nav .btn-white {
   background-position: center;
 }
 
-/* Movies' section */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+  }
 
-.label-for-movies{
+  .header-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-img {
+    display: none;
+  }
+}
+
+/* Movies' section */
+.label-for-movies {
   display: flex;
   justify-content: space-between;
 }
 
-.movie-collection{
+.movie-collection {
   display: flex;
   justify-content: space-between;
 }
@@ -154,6 +168,31 @@ nav .btn-white {
   width: 100%;
 }
 
+@media (max-width: 1024px) and (min-width: 646px) {
+  .movie-card {
+    margin: 0;
+  }
+
+  .movie-card:first-child {
+    margin-right: 28px;
+  }
+
+  .movie-card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 646px) {
+  .movie-collection {
+    flex-direction: column;
+  }
+
+  .movie-card {
+    margin: 0 0 28px 0;
+    padding: 5%;
+  }
+}
+
 /* Booking section */
 #booking {
   padding-top: 10%;
@@ -165,19 +204,20 @@ nav .btn-white {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32vw;
+  width: 40vw;
   max-width: 600px;
   margin: 48px auto 0 auto;
   padding: 5%;
   border-radius: 24px;
   box-shadow: 0 4px 22px #E5E5E5;
+  box-sizing: border-box;
 }
 
-.booking-text{
+.booking-text {
   margin: 32px 0 24px;
 }
 
-#booking-form{
+#booking-form {
   width: 100%;
 }
 
@@ -201,11 +241,11 @@ input {
   padding: 16px 24px;
 }
 
-input:hover{
+input:hover {
   background-color: #E5E5E5;
 }
 
-input:focus{
+input:focus {
   background-color: hsla(214, 84%, 56%, 0.1);
   outline: 1px solid #2F80ED;
 }
@@ -216,12 +256,26 @@ input:focus{
   margin-bottom: 0;
 }
 
-.success-message{
+@media (max-width: 1024px) and (min-width: 646px){
+  .booking-card{
+    width: 60%;
+  }
+}
+
+
+@media (max-width: 646px){
+  .booking-card{
+    width: 100%;
+  }
+}
+
+/* Responses to the form submission */
+.success-message {
   color: #EC1115;
   margin-top: 64px;
 }
 
-.warning{
+.warning {
   color: #EC1115;
   font-size: 14px;
   font-weight: 500;
@@ -229,15 +283,16 @@ input:focus{
   margin: 0;
 }
 
-.red-outline{
+.red-outline {
   outline: 1px solid hsla(359, 87%, 50%);
   background-color: hsla(359, 87%, 50%, 0.1);
 }
 
-.hidden{
+/* Toggled classes */
+.hidden {
   display: none;
 }
 
-.visible{
+.visible {
   display: block;
 }
